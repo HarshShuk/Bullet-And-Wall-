@@ -44,12 +44,15 @@ var bullet,speed, weight;
      drawSprites();
  }
 
-  function hasCollided(lbullet, lwall) {
+function hasCollided(lbullet, lwall) {
 
   bulletRightEdge=lbullet.x +lbullet.width;
 
   wallLeftEdge=lwall.x;
 
-  if (bulletRightEdge>=wallLeftEdge) { return true } 
-
-  return false; }
+  if (bulletRightEdge>=wallLeftEdge) {
+     return true
+  } else{
+     return false
+  }
+}
